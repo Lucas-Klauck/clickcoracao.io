@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quebrar Corações 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Quebrar Corações 💖</h1>
+
+  <!-- Tela inicial -->
+  <div id="startScreen">
+    <p>Escolha o tempo de jogo:</p>
+    <button class="time-btn" data-time="30">30 segundos</button>
+    <button class="time-btn" data-time="60">60 segundos</button>
+    <button class="time-btn" data-time="90">90 segundos</button>
+  </div>
+
+  <!-- Área do jogo -->
+  <div id="gameArea" style="display:none;">
+    <p>Clique nos corações antes que cheguem ao chão!</p>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+    <div class="info">
+      <span id="score">Pontos: 0</span>
+      <span id="timer">Tempo: 0</span>
+      <span id="best">Recorde: 0</span>
+    </div>
+
+    <div id="message"></div>
+    <button id="restartBtn" style="display:none;">Jogar de novo</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
